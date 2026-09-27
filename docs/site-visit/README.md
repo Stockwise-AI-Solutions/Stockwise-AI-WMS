@@ -1,9 +1,9 @@
-# Task 3: Site Visit Report - Vereeniging Warehouse
+# Stockwise-AI-WMS: Warehouse Site Visit Report - Vereeniging
 
 **Date:** 2026-09-17
 
 ## 1. Introduction
-For Task 3, our group needed to look at how a typical municipal warehouse operates so we could identify the problems our AI solution (Stockwise AI) needs to fix. We gathered visual references to understand the current manual systems used in warehouses like the ones in Vereeniging. The pictures below show what we found regarding the storage layout, paper-based tracking, and distribution areas.
+As part of our research for Stockwise-AI-WMS, our group visited a typical municipal warehouse in Vereeniging to identify the real-world problems our AI solution needs to fix. We gathered visual references to understand the current manual systems used in these warehouses. The pictures below show what we found regarding the storage layout, paper-based tracking, and distribution areas.
 
 ## 2. Pictures of the Warehouse Setup
 
@@ -36,8 +36,8 @@ Looking at these pictures, we noticed a few big problems that match what we read
 3. **Bad Layout:** Stock is mixed together on the shelves (Figures 1 and 2). Forklifts have to travel long distances because fast-moving items are not placed near the exit.
 4. **Expiry Issues:** There is no automated system to warn staff about expired goods, which leads to waste.
 
-## 4. How This Links to Stockwise AI
-These observations directly show why we need our system. Here is how Stockwise AI fixes each problem:
+## 4. How This Links to Stockwise-AI-WMS
+These observations directly show why we need our system. Here is how Stockwise-AI-WMS fixes each problem:
 
 *   **Mixed storage** -> Fixed by Intelligent Slotting (K-Means + Genetic Algorithm) to put fast items near the front.
 *   **Manual logbooks** -> Fixed by Computer Vision stock-taking, which removes the need for paper.
@@ -45,4 +45,4 @@ These observations directly show why we need our system. Here is how Stockwise A
 *   **Untracked expiry** -> Fixed by Predictive Analytics, which automatically warns staff before items expire.
 
 ## 5. Conclusion
-The pictures confirm that the current manual system is slow, prone to errors, and makes service delivery difficult. Stockwise AI will automate the stock-taking and give managers real-time, accurate data.
+The pictures confirm that the current manual system is slow, prone to errors, and makes service delivery difficult. Stockwise-AI-WMS will automate the stock-taking and give managers real-time, accurate data.
