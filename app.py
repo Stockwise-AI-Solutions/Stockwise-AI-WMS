@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.title("Stockwise AI - Warehouse Dashboard")
+st.title("Stockwise-AI-WMS - Warehouse Dashboard")
 st.write("Real-time inventory tracking for Emfuleni Municipality")
 
 # loading the cleaned dataset
