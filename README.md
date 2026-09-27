@@ -1,2 +1,2 @@
-# Stockwise-AI-WMS
-An AI Solution for Industries - Intelligent Warehouse Management System for Emfuleni Municipality.
+# StockWise-AI
+Smart system that helps warehouses manage their stock
