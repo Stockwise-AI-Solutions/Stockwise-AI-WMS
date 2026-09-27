@@ -4,7 +4,7 @@ import numpy as np
 
 st.set_page_config(page_title="Stockwise-AI-WMS", page_icon="W", layout="wide")
 
-st.title("[#] Stockwise-AI-WMS - Warehouse Dashboard")
+st.title("Stockwise-AI-WMS - Warehouse Dashboard")
 st.write("Real-time inventory tracking for Emfuleni Municipality")
 
 @st.cache_data
@@ -13,10 +13,10 @@ def load_data():
 
 df = load_data()
 
-st.sidebar.header("Navigation")
-menu = st.sidebar.radio("Go to", ["Dashboard", "AI Alerts", "Chatbot Interface"])
+# Using tabs instead of sidebar navigation for a cleaner look
+tab1, tab2, tab3 = st.tabs(["Dashboard", "AI Alerts", "Chatbot Interface"])
 
-if menu == "Dashboard":
+with tab1:
     st.subheader("Current Stock Levels")
     
     col1, col2, col3 = st.columns(3)
@@ -26,23 +26,23 @@ if menu == "Dashboard":
     
     st.dataframe(df[['item_id', 'category', 'stock_level', 'daily_demand', 'picking_time_seconds']].head(15))
 
-elif menu == "AI Alerts":
-    st.subheader("[AI] AI-Generated Alerts")
+with tab2:
+    st.subheader("AI-Generated Alerts")
     
     low_stock = df[df['stock_level'] < df['reorder_point']]
     if not low_stock.empty:
-        st.warning(f"[!] Low Stock Alert: {len(low_stock)} items are below their reorder point. Example: {low_stock.iloc[0]['item_id']}")
+        st.warning(f"Low Stock Alert: {len(low_stock)} items are below their reorder point. Example: {low_stock.iloc[0]['item_id']}")
     else:
-        st.success("[OK] All stock levels are healthy.")
+        st.success("All stock levels are healthy.")
         
     high_picking = df[df['picking_time_seconds'] > df['picking_time_seconds'].quantile(0.95)]
     if not high_picking.empty:
-        st.error(f"[X] Anomaly Detected: {len(high_picking)} items had unusually long picking times. Possible theft or misplacement. Example: Item {high_picking.iloc[0]['item_id']} took {high_picking.iloc[0]['picking_time_seconds']} seconds.")
+        st.error(f"Anomaly Detected: {len(high_picking)} items had unusually long picking times. Possible theft or misplacement. Example: Item {high_picking.iloc[0]['item_id']} took {high_picking.iloc[0]['picking_time_seconds']} seconds.")
     
-    st.info("[>] Forecast: High demand for pipes expected in the next cycle. Order now.")
+    st.info("Forecast: High demand for pipes expected in the next cycle. Order now.")
 
-elif menu == "Chatbot Interface":
-    st.subheader("[?] Warehouse Chatbot")
+with tab3:
+    st.subheader("Warehouse Chatbot")
     st.write("Ask the warehouse bot about stock locations, expiry dates, or low stock warnings.")
     
     user_input = st.text_input("Type your question here (e.g., 'Where is the blue cable?'):")
