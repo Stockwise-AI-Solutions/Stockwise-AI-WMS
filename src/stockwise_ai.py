@@ -14,13 +14,11 @@ print(f"Loaded {len(df)} records.\n")
 # --- 2. DEMAND FORECASTING ---
 print("--- Demand Forecasting Module ---")
 if 'daily_demand' in df.columns:
-    # Using 'item_popularity_score' instead of item_id to avoid text error
     X = df[['item_popularity_score']] 
     y = df['daily_demand']
     
     model = LinearRegression().fit(X, y)
     
-    # Prediction for a hypothetical "next" item
     predicted_demand = model.predict([[0.5]])[0]
     print(f"Predicted demand for next item cycle: {predicted_demand:.2f} units")
     
@@ -51,7 +49,6 @@ else:
 # --- 4. INTELLIGENT SLOTTING ---
 print("\n--- Intelligent Slotting Module (K-Means Clustering) ---")
 if 'item_popularity_score' in df.columns and 'daily_demand' in df.columns:
-    # Using numerical columns for clustering
     slotting_data = df[['item_popularity_score', 'daily_demand']].dropna()
     
     kmeans = KMeans(n_clusters=3, random_state=42).fit(slotting_data)
@@ -80,4 +77,4 @@ print(f"Bot: {warehouse_chatbot('Where is the blue cable?')}")
 print("User: Show me expired medicine.")
 print(f"Bot: {warehouse_chatbot('Show me expired medicine.')}")
 
-print("\n--- Stockwise AI Execution ---")
+print("\n--- Stockwise-AI-WMS Execution ---")
