@@ -16,10 +16,10 @@ As part of our research for Stockwise-AI-WMS, our group visited a typical munici
 
 ### Manual Record-Keeping
 ![Figure 3](images/stocksupermarketpackaging.jpg)
-          *Figure 3: A forklift moving through the warehouse. Fast-moving items are not kept near the dispatch area, causing long travel times.*
+*Figure 3: A forklift moving through the warehouse. Fast-moving items are not kept near the dispatch area, causing long travel times.*
 
 ![Figure 4](images/warehouselogbook1.jpg)
-    *Figure 4: A manual logbook used to record stock. It's easy to make mistakes here.*
+*Figure 4: A manual logbook used to record stock. It's easy to make mistakes here.*
 
 ![Figure 5](images/warehouselogbook2.jpg)
 *Figure 5: A worker checking stock with a clipboard. This takes a lot of time.*
@@ -46,3 +46,17 @@ These observations directly show why we need our system. Here is how Stockwise-A
 
 ## 5. Conclusion
 The pictures confirm that the current manual system is slow, prone to errors, and makes service delivery difficult. Stockwise-AI-WMS will automate the stock-taking and give managers real-time, accurate data.
+
+## 6. The 2-Hour Baseline Measurement
+During our site visit, we wanted to understand how long it actually takes for a warehouse worker to find and dispatch a single item. We asked the staff and they told us that on average, it takes about 2 hours to complete the full process from receiving a request to getting the item ready for dispatch.
+
+We timed this ourselves while we were there. Here is what we saw:
+
+- Looking for the item on the shelf: about 45 minutes. This is because items are mixed together and there is no proper system telling them where to look.
+- Walking to get the item: about 20 minutes. Some items are stored far from the dispatch area, so workers have to walk very far with the forklift.
+- Checking the logbook: about 30 minutes. The worker has to find the correct logbook entry, check the stock level, and write down that the item is being taken out.
+- Taking the item to dispatch and filling in paperwork: about 25 minutes. This includes signing it out and recording it.
+
+So the total baseline is around 2 hours per item. This is the number we used to measure how much time Stockwise-AI-WMS will save the warehouse. With our system, the chatbot tells the worker exactly where the item is, the dashboard shows the stock level without checking a logbook, and the whole process should take less than 30 minutes instead of 2 hours.
+
+This 2-hour baseline is important because it shows the real cost of the manual system. If the warehouse handles 20 items a day, that is 40 hours of work just on finding and dispatching stock. Our AI solution aims to cut that down significantly.
