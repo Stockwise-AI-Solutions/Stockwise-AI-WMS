@@ -27,7 +27,7 @@ Figure 2: The main dashboard of our system. It gives an overview of the current 
 
 ### AI Alerts
 ![AI Alerts](screenshots/AI_alerts.png)
-Figure 3: The AI alerts tab. It warns us about low stock items and unusual activity.
+Figure 3: The AI alerts tab, it warns us about low stock items and unusual activity.
 
 ### Chatbot Interface (Greeting)
 ![Chatbot Greeting](screenshots/chatbot_screenshot1.png)
