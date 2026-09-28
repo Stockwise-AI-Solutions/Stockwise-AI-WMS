@@ -1,6 +1,7 @@
 # Stockwise-AI-WMS
 
 **Module:** Business Analysis 3.2 Capstone (AI Solution for Industries)
+
 **Project:** Intelligent Warehouse Management System for Emfuleni Municipality
 
 ## What is this project?
