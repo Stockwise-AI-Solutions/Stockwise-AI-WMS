@@ -16,10 +16,10 @@ As part of our research for Stockwise-AI-WMS, our group visited a typical munici
 
 ### Manual Record-Keeping
 ![Figure 3](images/stocksupermarketpackaging.jpg)
-*Figure 3: A forklift moving through the warehouse. Fast-moving items are not kept near the dispatch area, causing long travel times.*
+          *Figure 3: A forklift moving through the warehouse. Fast-moving items are not kept near the dispatch area, causing long travel times.*
 
 ![Figure 4](images/warehouselogbook1.jpg)
-*Figure 4: A manual logbook used to record stock. It's easy to make mistakes here.*
+    *Figure 4: A manual logbook used to record stock. It's easy to make mistakes here.*
 
 ![Figure 5](images/warehouselogbook2.jpg)
 *Figure 5: A worker checking stock with a clipboard. This takes a lot of time.*
