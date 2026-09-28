@@ -8,7 +8,7 @@ Before we built the system, we had to think about who cares about this project. 
 - Us (The Group): We are the ones doing the actual work. We had to do the research, write the code, make the dashboard, and put together the report. If something goes wrong, it's on us.
 
 2. The Warehouse Side (The People in Emfuleni)
-- The Warehouse Manager: This is the person in charge. They will use our dashboard to see what stock is low and what is running out. Right now, they must guess, but with our system they can just look at the screen.
+- The Warehouse Manager: This is the person in charge, They will use our dashboard to see what stock is low and what is running out. Right now, they must guess, but with our system they can just look at the screen.
 - The Warehouse Clerks: These are the guys on the floor. They pick the stock and move it around. They will use the chatbot to ask things like "where is the cable?" instead of walking around looking for it. This saves them a lot of time.
 - The Auditors: These are the people who check if stock is being stolen or lost. They will really like our anomaly detection feature because it flags suspicious picking times for them.
 - The Clinic Staff: These are the end users. They receive the medicine and other items from the warehouse. If our system works properly, they won't have to wait as long for their stock, and they won't receive expired medicine.
