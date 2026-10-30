@@ -69,7 +69,7 @@ NLP / Speech: BERT for queries like "Show me expired medicine", OpenAI Whisper f
 
 ## Screenshots of the System
 
-### Terminal Output
+### Terminal OutpuT
 ![Terminal Output](screenshots/terminal_output.png)
 Figure 1: The Python script running in the terminal. It shows the demand forecast, anomaly detection and clustering results.
 
