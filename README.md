@@ -4,6 +4,15 @@
 
 **Project:** Intelligent Warehouse Management System for Emfuleni Municipality
 
+### Group Members:
+- 224376845 - T.A. Lebidike
+- 225118157 - N.E. Tsotetsi
+- 225089122 - A. Makamole
+- 225139987 - G.G. Toyana
+- 223268585 - N. Sikhosana
+
+---
+
 ## What is this project?
 We built Stockwise-AI-WMS for our Business Analysis 3.2 project. The theme was "AI Solution for Industries," and we chose to focus on warehouses. 
 
